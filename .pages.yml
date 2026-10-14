@@ -1,0 +1,143 @@
+media:
+  - name: images
+    label: Images and screenshots
+    input: public/media
+    output: /media
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: content/posts
+    format: json
+    filename: "{primary}.json"
+    view:
+      fields: [title, date, category, featured]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Post title
+        type: string
+        required: true
+      - name: summary
+        label: Short description
+        type: text
+        required: true
+      - name: date
+        label: Publish date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: string
+        required: true
+        description: e.g. Football Chronicle, Design notes, Journal
+      - name: featured
+        label: Feature on homepage
+        type: boolean
+      - name: cover
+        label: Cover image
+        type: image
+        options:
+          media: images
+      - name: body
+        label: Article
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+          switcher: true
+
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    format: json
+    filename: "{primary}.json"
+    view:
+      fields: [title, status, category]
+      primary: title
+    fields:
+      - name: title
+        label: Project name
+        type: string
+        required: true
+      - name: subtitle
+        label: Short strapline
+        type: string
+      - name: description
+        label: Project summary
+        type: text
+      - name: status
+        label: Status
+        type: string
+        description: e.g. In development, Exploring, Released
+      - name: category
+        label: Project type
+        type: string
+      - name: cover
+        label: Project artwork
+        type: image
+        options:
+          media: images
+      - name: website_url
+        label: External website or download URL
+        type: string
+      - name: featured
+        label: Feature on homepage
+        type: boolean
+      - name: body
+        label: Full project description
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+
+  - name: site
+    label: Website settings
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: site_title
+        label: Website name
+        type: string
+        required: true
+      - name: site_description
+        label: SEO description
+        type: text
+      - name: eyebrow
+        label: Small label above homepage headline
+        type: string
+      - name: hero_title
+        label: Homepage headline
+        type: string
+      - name: hero_description
+        label: Homepage intro
+        type: text
+      - name: author_name
+        label: Display name
+        type: string
+      - name: author_bio
+        label: About me
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+      - name: contact_email
+        label: Contact email (optional)
+        type: string
+      - name: github_url
+        label: GitHub profile URL (optional)
+        type: string
+      - name: footer_note
+        label: Footer text
+        type: string

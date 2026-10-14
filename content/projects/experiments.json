@@ -1,0 +1,11 @@
+{
+  "title": "The Prototype Archive",
+  "subtitle": "An evolving space for future projects",
+  "description": "A demonstration project card showing how smaller tools, design studies and experiments can be presented alongside larger releases.",
+  "status": "Sample entry",
+  "category": "Experiments",
+  "cover": "/media/project-archive.svg",
+  "website_url": "",
+  "featured": false,
+  "body": "This is **sample content** included to demonstrate the portfolio layout. Replace it with a real project in Pages CMS.\n\n## What a project page can include\n\n- The problem or idea behind the work\n- Screenshots and key decisions\n- Features, progress and future plans\n\nYou can add any number of projects, with individual pages generated automatically."
+}

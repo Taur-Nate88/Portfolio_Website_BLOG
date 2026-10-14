@@ -1,0 +1,9 @@
+{
+  "title": "Why keep a public project journal?",
+  "summary": "An introduction to this portfolio: a place to collect updates, document decisions and make space for new ideas.",
+  "date": "2026-10-03",
+  "category": "Journal",
+  "featured": false,
+  "cover": "/media/article-journal.svg",
+  "body": "Projects change as you work on them. Decisions that seem obvious today often become difficult to reconstruct later. A project journal gives those decisions a home.\n\n## What belongs here\n\n- Work in progress and release notes\n- Screenshots, concepts and experiments\n- Lessons learned from successful and unsuccessful attempts\n\nThese demonstration articles are editable from Pages CMS, including headings and uploaded images."
+}

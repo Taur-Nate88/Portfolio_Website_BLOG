@@ -1,0 +1,13 @@
+{
+  "name": "openframe-portfolio-pages-cms",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Openframe professional project portfolio and blog with Pages CMS and Cloudflare Pages",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node preview.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

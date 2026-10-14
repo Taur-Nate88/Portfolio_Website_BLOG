@@ -1,0 +1,9 @@
+{
+  "title": "Designing for clarity, not complexity",
+  "summary": "A few principles for interfaces that stay useful as projects grow in ambition.",
+  "date": "2026-10-09",
+  "category": "Design process",
+  "featured": false,
+  "cover": "/media/article-design.svg",
+  "body": "Good interfaces make the next step obvious. They help someone understand what matters without forcing them to decode the screen.\n\n## Keep a clear hierarchy\n\nStart with the key decision. Supporting information should remain available without competing for attention.\n\n## Prefer consistency\n\nThe same action should look and behave consistently across screens. Familiar patterns make complex projects easier to learn.\n\nThis is sample writing to illustrate the blog design. Replace it with your own development notes."
+}
